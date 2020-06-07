@@ -1,13 +1,269 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: Nunito;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #1b1c29;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 70px;
+}
+
+#nav_bar {
+	background-color: #191e28;
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+}
+
+#nav_container {
+	width: 90%;
+	margin: auto;
+	padding: 0.2em;
+}
+
+#navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#navbar a {
+	color: white;
+	text-decoration: none;
+	list-style: none;
+}
+
+#navtags {
+	text-decoration: none;
+	list-style: none;
+	display: flex;
+}
+
+#navtags li {
+	display: inline;
+	margin-right: 15px;
+}
+
+#home {
+	padding-top: 8em;
+	padding-bottom: 2em;
+	width: 80%;
+	margin: 0 auto;
+}
+
+#home h1 {
+	font-size: 3em;
+}
+
+#timeline {
+	display: flex-column;
+	text-align: center;
+	background-color: #191e28;
+	color: white;
+	padding-top: 2em;
+	padding-bottom: 5em;
+}
+
+.timeline-images {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 2em;
+}
+
+.timeline-images img {
+	width: 85%;
+	border: 0.5px solid;
+	border-radius: 10px;
+}
+
+#mentor {
+	padding-bottom: 5em;
+	width: 100%;
+	text-align: center;
+}
+
+.section-title {
+	padding-top: 1em;
+	padding-bottom: 2em;
+	font-size: 1.9em;
+	text-align: center;
+}
+
+#blog {
+	padding-bottom: 5em;
+}
+
+#contact {
+	padding-top: 5em;
+	padding-bottom: 5em;
+	background-color: white;
+	display: flex;
+	line-height: 2rem;
+	justify-content: space-around;
+}
+
+#contact a {
+	text-decoration: none;
+	list-style: none;
+	color: #191e28;
+}
+
+.fa-facebook {
+	color: blue;
+}
+
+.fa-instagram {
+	color: #191e28;
+}
+
+.fa-linkedin {
+	color: #191e28;
+}
+
+#contact_des {
+	width: 20%;
+}
+
+.quick-links {
+	list-style: none;
+}
+
+.contact-tag li {
+	display: inline;
+	margin-right: 15px;
+}
+
+#landing_page {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#landing_page img {
+	width: 100%;
+}
+
+#enroll {
+	padding: 1em;
+	background-color: white;
+	border-radius: 5%;
+	border: 0.2px solid;
+}
+
+#enroll:hover {
+	background-color: #191e28;
+	color: white;
+}
+
+#services {
+	text-align: center;
+	margin: 0 auto;
+	background-color: #191e28;
+}
+
+#follow_links {
+	display: flex;
+	align-items: center;
+}
+
+.fa-arrow {
+	color: black;
+}
+
+.arrow-down {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.arrow-down:hover i {
+	transform: translate(0px, 5px);
+	transition: 0.2s;
+}
+
+#arrow {
+	background-color: white;
+	border: none;
+	font-size: 3em;
+	outline: none;
+}
+
+#package {
+	background-color: #191e28;
+	padding: 2.5em 0 10em 0;
+}
+
+.package-title {
+	color: white;
+}
+
+#pricing {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	justify-content: space-around;
+}
+
+.package {
+	background-color: white;
+	color: #191e28;
+	padding: 4em 3em 4em 3em;
+	text-align: center;
+	border-radius: 10px;
+	line-height: 3em;
+}
+
+.basic {
+	box-shadow: -1em 1em black;
+}
+
+.advanced {
+	box-shadow: -1em 1em #dd0000;
+}
+
+.premium {
+	box-shadow: -1em 1em #ffce00;
+}
+
+.basic h3 {
+	background-color: black;
+	padding: 0.1em 0.5em 0.1em 0.5em;
+	color: white;
+	border-radius: 5px;
+}
+
+.advanced h3 {
+	background-color: #dd0000;
+	padding: 0.1em 0.5em 0.1em 0.5em;
+	color: white;
+	border-radius: 5px;
+}
+
+.premium h3 {
+	background-color: #ffce00;
+	padding: 0.1em 0.5em 0.1em 0.5em;
+	color: white;
+	border-radius: 5px;
+}
+
+.mentor-grid {
+	display: grid;
+	grid-row: auto auto;
+	grid-template-columns: 30em 30em;
+	grid-column-gap: 2em;
+	grid-row-gap: 4em;
+	justify-content: center;
+}
+
+.mentor-grid img {
+	width: 60%;
+	border-radius: 50%;
+	border: 2px solid #191e28;
+}
+
+.box {
+	text-align: center;
 }
