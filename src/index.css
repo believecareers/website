@@ -11,9 +11,14 @@ html {
 	scroll-padding-top: 70px;
 }
 
+#logo {
+	width: 20%;
+}
+
 #nav_bar {
-	background-color: #191e28;
+	background-color: white;
 	width: 100%;
+	margin: 0 auto;
 	overflow: hidden;
 	position: fixed;
 }
@@ -31,7 +36,7 @@ html {
 }
 
 #navbar a {
-	color: white;
+	color: #191e28;
 	text-decoration: none;
 	list-style: none;
 }
@@ -59,76 +64,79 @@ html {
 }
 
 #timeline {
-	display: flex-column;
-	text-align: center;
+	padding-top: 1.5em;
+	padding-bottom: 3em;
 	background-color: #191e28;
 	color: white;
-	padding-top: 2em;
-	padding-bottom: 5em;
+	margin: 0 auto;
 }
 
-.timeline-images {
-	display: flex;
-	justify-content: space-around;
-	padding-top: 2em;
+.slide {
+	text-align: center;
+	width: 100%;
+	border-radius: 5px;
 }
 
-.timeline-images img {
-	width: 85%;
-	border: 0.5px solid;
-	border-radius: 10px;
+.slide img {
+	border: 5px solid black;
 }
 
 #mentor {
+	padding-top: 1.5em;
 	padding-bottom: 5em;
 	width: 100%;
+	margin: 0 auto;
 	text-align: center;
 }
 
 .section-title {
-	padding-top: 1em;
-	padding-bottom: 2em;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
 	font-size: 1.9em;
 	text-align: center;
 }
 
-#blog {
-	padding-bottom: 5em;
-}
-
 #contact {
-	padding-top: 5em;
-	padding-bottom: 5em;
-	background-color: white;
 	display: flex;
 	line-height: 2rem;
 	justify-content: space-around;
 }
 
+.contact_footer {
+	padding-top: 5em;
+	padding-bottom: 2em;
+	background-color: #191e28;
+}
+
 #contact a {
 	text-decoration: none;
 	list-style: none;
-	color: #191e28;
+	color: white;
 }
 
 .fa-facebook {
-	color: blue;
+	color: #3b5999;
+	font-size: 1.5em;
 }
 
 .fa-instagram {
-	color: #191e28;
+	color: #e4405f;
+	font-size: 1.5em;
 }
 
 .fa-linkedin {
-	color: #191e28;
+	color: #0e76a8;
+	font-size: 1.5em;
 }
 
 #contact_des {
+	color: white;
 	width: 20%;
 }
 
 .quick-links {
 	list-style: none;
+	color: white;
 }
 
 .contact-tag li {
@@ -150,21 +158,29 @@ html {
 	padding: 1em;
 	background-color: white;
 	border-radius: 5%;
-	border: 0.2px solid;
+	background-color: #191e28;
+	color: white;
+	border: none;
 }
 
 #enroll:hover {
-	background-color: #191e28;
-	color: white;
+	transform: scale(1.1);
+	transition-timing-function: ease-in-out;
 }
 
 #services {
+	padding-top: 0.8em;
 	text-align: center;
 	margin: 0 auto;
 	background-color: #191e28;
 }
 
+.social_media {
+	color: white;
+}
+
 #follow_links {
+	color: white;
 	display: flex;
 	align-items: center;
 }
@@ -192,12 +208,8 @@ html {
 }
 
 #package {
-	background-color: #191e28;
 	padding: 2.5em 0 10em 0;
-}
-
-.package-title {
-	color: white;
+	margin: 0 auto;
 }
 
 #pricing {
@@ -218,14 +230,17 @@ html {
 
 .basic {
 	box-shadow: -1em 1em black;
+	border: 2px solid black;
 }
 
 .advanced {
 	box-shadow: -1em 1em #dd0000;
+	border: 2px solid #dd0000;
 }
 
 .premium {
 	box-shadow: -1em 1em #ffce00;
+	border: 2px solid #ffce00;
 }
 
 .basic h3 {
@@ -252,8 +267,8 @@ html {
 .mentor-grid {
 	display: grid;
 	grid-row: auto auto;
-	grid-template-columns: 30em 30em;
-	grid-column-gap: 2em;
+	grid-template-columns: 25em 25em 25em;
+	grid-column-gap: 0.2em;
 	grid-row-gap: 4em;
 	justify-content: center;
 }
@@ -266,4 +281,37 @@ html {
 
 .box {
 	text-align: center;
+}
+
+.blog-cards {
+	display: flex;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	justify-content: space-around;
+}
+
+.blogs {
+	background-color: #191e28;
+	text-align: center;
+	width: 20%;
+	padding-top: 10em;
+	padding-bottom: 10em;
+	padding-left: 2em;
+	padding-right: 2em;
+	color: white;
+	border-radius: 10px;
+}
+
+[data-component="slideshow"] .slide {
+	display: none;
+}
+
+[data-component="slideshow"] .slide.active {
+	display: block;
+}
+
+.copyright {
+	color: white;
+	text-align: center;
+	padding-top: 2em;
 }
